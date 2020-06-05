@@ -21,7 +21,7 @@ const EditUserForm = (props) => {
 
         if (!user.email || !user.firstname || !user.lastname) return
 
-        axios.put('http://localhost:8001/api/update/' + user.id, user, {
+        axios.put('http://localhost:8000/api/update/' + user.id, user, {
             method: 'PUT',
             body: JSON.stringify(user),
         })

@@ -8,7 +8,7 @@ interface UserInterface
 {
     public function getId();
     public function getLastname();
-    public function setLastname();
+    public function setLastname(string $lastname);
     public function getFirstname();
     public function getEmail();
     public function getUsername();

@@ -12,7 +12,7 @@ const AddUserForm = (props) => {
 
         if (!user.email || !user.firstname || !user.lastname) return
 
-        axios.post('http://localhost:8001/api/add', user, {
+        axios.post('http://localhost:8000/api/add', user, {
             method: 'post',
             body: JSON.stringify(user),
         })

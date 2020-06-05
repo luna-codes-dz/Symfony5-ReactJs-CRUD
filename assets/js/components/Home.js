@@ -29,7 +29,7 @@ const Home = () => {
     }
 
     const deleteUser = (id, user) => {
-        axios.delete('http://localhost:8001/api/delete/' + user.id, user, {
+        axios.delete('http://localhost:8000/api/delete/' + user.id, user, {
             data: user
         })
         .then(response => {
@@ -45,7 +45,7 @@ const Home = () => {
     }
 
     async function fetchData() {
-        const res = await fetch("http://localhost:8001/api/users");
+        const res = await fetch("http://localhost:8000/api/users");
         res
             .json()
             .then(res => setUsers(res))
